@@ -1,0 +1,26 @@
+[
+    {
+        "id": 1,
+        "username": "abc.Muzaffar",
+        "posts": 45,
+        "followers": 63,
+        "following": 7,
+        "images": "http://localhost:5700/assets/images/abc.jpg"
+    },
+    {
+        "id": 2,
+        "username": "Islom@gmail",
+        "posts": 108,
+        "followers": 63,
+        "following": 177,
+        "images": "http://localhost:5700/assets/images/islom.jpg"
+    },
+    {
+        "id": 3,
+        "username": "Alisher@reffery",
+        "posts": 75,
+        "followers": 89,
+        "following": 205,
+        "images": "http://localhost:5700/assets/images/reffery.jpg"
+    }
+]

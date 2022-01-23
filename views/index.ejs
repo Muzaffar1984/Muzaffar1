@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Instagram Profile Layout with CSS Grid &amp; Flexbox</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1"><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600"><link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+<link rel="stylesheet" href="/assets/app.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<header>
+
+	<div class="container">
+
+		<div class="profile">
+
+			<div class="profile-image">
+
+				<img src="<%= user.images %>" alt="">
+
+			</div>
+
+			<div class="profile-user-settings">
+
+				<h1 class="profile-user-name"><%= user.username %></h1>
+
+				<button class="btn profile-edit-btn">Edit Profile</button>
+
+				<button class="btn profile-settings-btn" aria-label="profile settings"><i class="fas fa-cog" aria-hidden="true"></i></button>
+
+			</div>
+
+			<div class="profile-stats">
+
+				<ul>
+					<li><span class="profile-stat-count"><%= user.posts %></span> posts</li>
+					<li><span class="profile-stat-count"><%= user.followers %></span> followers</li>
+					<li><span class="profile-stat-count"><%= user.following %></span> following</li>
+				</ul>
+
+			</div>
+
+			<div class="profile-bio">
+
+				<p><span class="profile-real-name"><%= user.username %></span> Lorem ipsum dolor sit, amet consectetur adipisicing elit 📷✈️🏕️</p>
+
+			</div>
+
+		</div>
+		<!-- End of profile section -->
+
+	</div>
+	<!-- End of container -->
+
+</header>
+
+<main>
+
+	<div class="container">
+
+		<div class="gallery">
+
+            <% for(let user of userPosts) { %>
+			
+                <div class="gallery-item" tabindex="0">
+
+				    <img src="<%= user.images %>" class="gallery-image" alt="">
+
+				    <div class="gallery-item-info">
+
+					    <ul>
+						    <li class="gallery-item-likes"><span class="visually-hidden">Likes:</span><i class="fas fa-heart" aria-hidden="true"></i><%= user.likes %></li>
+						    <li class="gallery-item-comments"><span class="visually-hidden">Comments:</span><i class="fas fa-comment" aria-hidden="true"></i><%= user.comments %></li>
+					    </ul>
+
+				    </div>
+
+			    </div>
+            
+            <% } %>
+
+		</div>
+		<!-- End of gallery -->
+
+	</div>
+	<!-- End of container -->
+
+</main>
+<!-- partial -->
+
+</body>
+</html>
