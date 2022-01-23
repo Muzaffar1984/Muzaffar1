@@ -4,41 +4,41 @@
         "likes": 45,
         "comments": 36,
         "userId": 1,
-        "images": "http://localhost:5700/assets/images/1.jpg"
+        "images": "/assets/images/1.jpg"
     },
     {
         "id": 2,
         "likes": 25,
         "comments": 16,
         "userId": 1,
-        "images": "http://localhost:5700/assets/images/2.jpg"
+        "images": "/assets/images/2.jpg"
     },
     {
         "id": 3,
         "likes": 98,
         "comments": 58,
         "userId": 2,
-        "images": "http://localhost:5700/assets/images/3.jpg"
+        "images": "/assets/images/3.jpg"
     },
     {
         "id": 4,
         "likes": 145,
         "comments": 87,
         "userId": 2,
-        "images": "http://localhost:5700/assets/images/4.jpg"
+        "images": "/assets/images/4.jpg"
     },
     {
         "id": 5,
         "likes": 78,
         "comments": 108,
         "userId": 3,
-        "images": "http://localhost:5700/assets/images/5.jpg"
+        "images": "/assets/images/5.jpg"
     },
     {
         "id": 6,
         "likes": 187,
         "comments": 145,
         "userId": 3,
-        "images": "http://localhost:5700/assets/images/6.jpg"
+        "images": "/assets/images/6.jpg"
     }
 ]
